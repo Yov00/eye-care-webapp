@@ -1,26 +1,46 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import LandingPage from './components/pages/lading/LandingPage';
+import DownloadPage from './components/pages/downloads/DownloadPage';
+import Navbar from './components/elements/navbar/Navbar.js';
+class App extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      apiResponse:""
+    }
+  }
+
+  callAPI(){
+    fetch("http://localhost:3041/testApi")
+      .then(res=>res.text())
+      .then(res=>this.setState({apiResponse:res}))
+      .catch(err=>console.log(err))
+  }
+
+  componentDidMount(){
+    this.callAPI();
+  }
+
+  render(){
+    return(
+      <Router>
+        <div className="root">
+          <div className="navbar">
+            <Navbar/>
+          </div>
+        <Switch>
+          <Route exact path="/" component={LandingPage}/>
+          <Route exact path="/downloads" component={DownloadPage}/>
+        </Switch>
+       
+        </div>
+    </Router>
+    )
+  }
 }
+
 
 export default App;
