@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import LandingPage from './components/pages/lading/LandingPage';
@@ -28,7 +27,7 @@ class App extends React.Component{
     return(
       <Router>
         <div className="root">
-          <div className="navbar">
+          <div className="root-navbar">
             <Navbar/>
           </div>
         <Switch>
