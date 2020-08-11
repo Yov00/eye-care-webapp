@@ -4,6 +4,9 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LandingPage from './components/pages/lading/LandingPage';
 import DownloadPage from './components/pages/downloads/DownloadPage';
 import Navbar from './components/elements/navbar/Navbar.js';
+import Footer from './components/elements/footer/Footer';
+
+
 class App extends React.Component{
   constructor(props){
     super(props);
@@ -12,15 +15,21 @@ class App extends React.Component{
     }
   }
 
-  callAPI(){
-    fetch("http://localhost:3041/testApi")
-      .then(res=>res.text())
-      .then(res=>this.setState({apiResponse:res}))
-      .catch(err=>console.log(err))
+  ampFXScript(){
+  
+    // document.querySelector('.footer').setAttribute('amp-fx','float-in-bottom');
+ 
+
+    const script = document.createElement('script');
+    script.src = 'https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js';
+    script.async = true;
+
+    document.body.appendChild(script);
+
   }
 
   componentDidMount(){
-    this.callAPI();
+    this.ampFXScript();
   }
 
   render(){
@@ -34,7 +43,9 @@ class App extends React.Component{
           <Route exact path="/" component={LandingPage}/>
           <Route exact path="/downloads" component={DownloadPage}/>
         </Switch>
-       
+          <div className="root-footer">
+            <Footer />
+          </div>
         </div>
     </Router>
     )

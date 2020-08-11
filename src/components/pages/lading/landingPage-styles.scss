@@ -1,79 +1,63 @@
+.wrapper{
 
-
-.landing--call-to-action{
+    margin:100px 0;
     display: flex;
-    flex-wrap: wrap;
-    width: 60%;
-
-    height: 300px;
-    margin:40px auto;
-    border-radius:10px;
-    padding:40px;
-    box-sizing: border-box;
-    box-shadow: 0 0 5px 0 #A259FF;
-    >div{
-        flex:1;
-        display: flex;
-        justify-content: center;
-
-    }
-    .app-description{
-        
-        flex-direction: column;
-        color:#A259FF;
-        text-align: center;
-        border-right: 1px solid #A259FF;
-        .eye-icon{
-            font-size:100px;
-            text-align: center;
-        }
-
-        p{
-            font-size:20px;
-            padding:0;
-            margin:0;
-        }
-        h1{
-            margin:0;
-            font-size:30px;
-        }
-    }
-
-    .call-to-action{
-        align-items: center;
-        flex-direction: column;
-        
-        h1{
-            color:#A259FF;
-            font-size: 30px;
-        }
-        p{
-            font-size: 10px;
-        }
-
-        .call-to-action--arrow{
-            color:#A259FF;
-            font-size:50px;
-            animation: mover .6s infinite  alternate;
-
-        }
-        
-        .download-btn > button{
-            border:0;
-            padding:20px;
-            background-color: #A259FF;
-            
-            color:white;
-            font-size: 18px;
-            font-weight: bold;
-            border-radius: 5px;
-        }
-    }
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+.call-to-action{
+    margin:150px;
+    color:#A259FF;
 
+    h1{
+        font-size: 50px;
+        margin: 0;;
+    }
+    p{
+        font-size:30px;
+        padding:0;
+        margin:0;
+    }
 
-// Animations
-@keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
+    .call-to-action--btns{
+        padding:20px 0;
+        display: flex;
+        
+        button{
+            border:0;
+            font-size: 20px;
+            padding:20px 40px;
+
+            &:hover{
+                cursor: pointer;
+            }
+
+            transition: .5s;
+        }
+
+        .primary{
+            color:white;
+            font-weight: bold;
+            background-color: #A259FF;
+
+            &:hover{
+                background-color: white;
+                color:#A259FF;
+                border:1px solid #A259FF;
+            }
+        }
+
+        .secondary{
+            border:1px solid #A259FF;
+            background-color: white;
+            color:#A259FF;
+            margin-left:20px;
+           
+            &:hover{
+                background-color:#A259FF;
+                color:white;
+            }
+        }
+    }
 }
