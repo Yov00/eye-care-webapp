@@ -5,7 +5,7 @@ import './download-styles.scss';
 const DownloadPage = () => {
     return (
 
-        <div className="download-section">
+        <div className="download-section animate-in">
             <header>
               <h1>Download Eye Care App</h1>
               <p>Powered by Electron JS</p>

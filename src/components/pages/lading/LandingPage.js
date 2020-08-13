@@ -7,7 +7,7 @@ const LandingPage = () => {
         window.location.href = '/downloads';
     }
     return (
-        <div className="wrapper">
+        <div className="wrapper animate-in">
             <div className="call-to-action">
                 <h1>Eye Care Application</h1>
                 <p>One step closer to better eyesight</p>
