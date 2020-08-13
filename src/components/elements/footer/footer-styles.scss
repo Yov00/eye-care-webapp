@@ -2,8 +2,17 @@
     background-color: #A259FF;
     height: 300px;
     width: 100%;
-    
+
     // position: fixed;
     // bottom: 0;
     overflow: hidden;
+}
+
+.all-rights-reserved{
+  color:white;
+
+  position: fixed;
+  bottom: 20px;
+  left:50%;
+  transform: translateX(-50%);
 }

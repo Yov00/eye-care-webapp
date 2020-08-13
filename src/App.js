@@ -16,9 +16,9 @@ class App extends React.Component{
   }
 
   ampFXScript(){
-  
+
     // document.querySelector('.footer').setAttribute('amp-fx','float-in-bottom');
- 
+
 
     const script = document.createElement('script');
     script.src = 'https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js';

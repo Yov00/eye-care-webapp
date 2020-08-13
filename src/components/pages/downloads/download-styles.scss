@@ -1,0 +1,60 @@
+.download-section{
+  margin: 150px 0 250px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color:#333;
+  header{
+    h1{
+
+        font-size: 50px;
+        margin: 0;
+      }
+    p{
+      margin: 0;
+      text-align: center;
+      text-decoration-style: wavy;
+      font-size: 30px;
+    }
+  }
+
+  .downloads{
+    margin-top:100px;
+
+    display: flex;
+
+    .download-links{
+      margin:0 20px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      i{
+        font-size: 70px;
+      }
+
+      a{
+        display: flex;
+        margin-top:20px;
+        background: #A259FF;
+        font-size: 20px;
+        color:white;
+
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;  
+        padding:20px 40px;
+        width: 150px;
+      
+
+        .versions{
+          font-size:13px;
+
+        }
+      }
+    }
+  }
+}

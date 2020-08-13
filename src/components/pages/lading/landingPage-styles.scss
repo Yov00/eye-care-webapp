@@ -12,18 +12,21 @@
 
     h1{
         font-size: 50px;
-        margin: 0;;
+        margin: 0;
+        color:#333;
     }
     p{
         font-size:30px;
         padding:0;
         margin:0;
+        color:#333;
+
     }
 
     .call-to-action--btns{
         padding:20px 0;
         display: flex;
-        
+
         button{
             border:0;
             font-size: 20px;
@@ -41,6 +44,7 @@
             font-weight: bold;
             background-color: #A259FF;
 
+
             &:hover{
                 background-color: white;
                 color:#A259FF;
@@ -53,7 +57,7 @@
             background-color: white;
             color:#A259FF;
             margin-left:20px;
-           
+
             &:hover{
                 background-color:#A259FF;
                 color:white;
