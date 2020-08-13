@@ -11,8 +11,8 @@ const Navbar = () => {
                 {console.log(currentURL)}
                 <li style={{
                      backgroundColor: currentURL  == localHost || currentURL  == herokuHost ? "#A259FF":"white",
-                     color:currentURL  == localHost || currentURL  == herokuHost  ?  "white":"#A259FF",
-                     paddingTop:currentURL==localHost || currentURL  == herokuHost  ?"20px":"0px"
+                     color: currentURL  == localHost || currentURL  == herokuHost  ?  "white":"#A259FF",
+                     paddingTop: currentURL == localHost || currentURL  == herokuHost  ?"20px":"0px"
                 }}><a href="/">Home</a></li>
 
 
@@ -20,9 +20,9 @@ const Navbar = () => {
 
                 <li
                 style={{
-                    backgroundColor: currentURL  == localHost+"downloads"? "#A259FF":"white",
-                    color:currentURL  == localHost+"downloads" ?  "white":"#A259FF",
-                    paddingTop:currentURL==localHost+"downloads"?"20px":"0px"
+                    backgroundColor: currentURL  == localHost+"downloads" || currentURL  == herokuHost+"downloads" ? "#A259FF":"white",
+                    color:currentURL  == localHost+"downloads" || currentURL  == herokuHost+"downloads" ?  "white":"#A259FF",
+                    paddingTop:currentURL==localHost+"downloads" || currentURL  == herokuHost+"downloads" ?"20px":"0px"
                }}
                 ><a href="/downloads">Downloads</a></li>
             </ul>
