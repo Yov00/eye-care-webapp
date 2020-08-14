@@ -8,7 +8,7 @@ const LandingPage = () => {
     }
     return (
         <div className="wrapper animate-in">
-            <div className="call-to-action">
+            <div className="call-to-action" >
                 <h1>Eye Care Application</h1>
                 <p>One step closer to better eyesight</p>
                 <div className="call-to-action--btns">

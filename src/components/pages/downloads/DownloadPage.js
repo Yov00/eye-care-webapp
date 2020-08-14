@@ -29,7 +29,7 @@ const DownloadPage = () => {
 
 
                 <div className="download-links">
-                  <i class="fab fa-apple" style={{color:"lightgrey"}}></i>
+                  <i className="fab fa-apple grey" ></i>
                   <a href="">
                   <i class="fas fa-arrow-down" style={{fontSize:'25px',margin:'0 10px'}}></i>  
                     <div>

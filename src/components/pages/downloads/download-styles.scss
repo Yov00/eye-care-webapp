@@ -23,6 +23,7 @@
     margin-top:100px;
 
     display: flex;
+    flex-wrap: wrap;
 
     .download-links{
       margin:0 20px;
@@ -83,4 +84,28 @@
     // transform: scale(1);
     opacity: 1;
   }
+}
+.grey{
+  color:#D3D3D3;
+}
+
+@media only screen and (max-width: 600px) {
+ header{
+  h1{
+    font-size: 30px!important;
+  }
+  p{
+    font-size: 20px!important;
+  }
+ }
+
+ .downloads{
+   width: 100%;
+   justify-content: center;
+
+   .download-links{
+    margin-top:40px!important;
+   }
+ }
+
 }

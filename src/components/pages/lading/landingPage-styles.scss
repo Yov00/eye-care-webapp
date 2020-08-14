@@ -1,13 +1,12 @@
 .wrapper{
-
+    width: 100%;
     margin:100px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 .call-to-action{
-    margin:150px;
+    margin:150px 0 150px 0;
     color:#A259FF;
 
     h1{
@@ -65,3 +64,35 @@
         }
     }
 }
+
+
+@media only screen and (max-width: 600px) {
+   .call-to-action{
+    
+       h1,p{
+           text-align: center;
+       }
+
+       h1{
+        font-size: 40px;
+       }
+       p{
+           font-size: 20px;
+       }
+       .call-to-action--btns{
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+
+           .secondary{
+               margin:20px 0 0 0;
+               width: 100%;
+
+           }
+
+           .primary{
+               width: 100%;
+           }
+       }
+   }
+  }
