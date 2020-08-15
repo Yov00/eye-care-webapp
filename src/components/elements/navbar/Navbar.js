@@ -4,7 +4,7 @@ import "./navbar-styles.scss"
 const Navbar = () => {
     let currentURL =window.location.href;
     let localHost ="http://localhost:3000/";
-    let herokuHost = "https://radiant-brushlands-91450.herokuapp.com/";
+    let herokuHost = "https://eye-care-webapp.herokuapp.com/";
     
     return (
     <div className="navbar" >
